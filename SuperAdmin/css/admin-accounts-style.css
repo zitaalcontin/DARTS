@@ -1,0 +1,26 @@
+ html{
+    font-family: 'Poppins';
+ }
+ .navbar .navbar-expand-lg .navbar-light .bg-light{
+    background-color: black;
+ }
+ .navbar{
+height: 50%;
+ }
+ .account-container{
+   margin-top: 1%;
+   padding: 30px;
+ }
+ .account-title h3{
+   font-weight: 700;
+ }
+
+ .table-container{
+margin-top: 4%;
+}
+/* a .active{
+   color: #293241; 
+   color: orange;
+   text-decoration: none;
+   
+} */
