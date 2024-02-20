@@ -1,6 +1,5 @@
 const ToSA = ()=>{
     window.location.href = "./SuperAdmin/html/map.html"
-    alert("hi");
 }
 
 const ToBrgy = ()=>{
