@@ -35,24 +35,31 @@
         <div class="table-data">
           <table class="table table-hover table-primary">
             <thead>
-              <td>Account ID</td>
-              <td>Lastname</td>
-              <td>Firsname</td>
-              <td>Middlename</td>
-
+              <td>Form ID</td>
+              <td>Name</td>
+              <td>Catergory</td>
+              <td>Priority Level</td>
+              <td>Price</td>
+              <td>Date</td>
+              <td>Status</td>
             </thead>
+            <!-- Render Data from Dtabase Here -->
             <tbody>
               <tr class="table" data-bs-toggle="modal" data-bs-target="#updaeModal" >
                 <td>DRT - 85469</td>
-                <td>Doe</td>
-                <td>John</td>
-                <td>Kurt</td>
+                <td>John Doe</td>
+                <td>PWD</td>
+                <td>High</td>
+                <td>02-20-2024</td>
+                <td>In Progress</td>
               </tr>
               <tr class="table" data-bs-toggle="modal" data-bs-target="#updaeModal">
-                <td>DRT - 85441</td>
-                <td>Dela Cruz</td>
-                <td>Juan</td>
-                <td>Michael</td>
+                <td>DRT - 78955</td>
+                <td>Juan Dela Cruz</td>
+                <td>PWD</td>
+                <td>High</td>
+                <td>02-20-2024</td>
+                <td>In Progress</td>
               </tr>
 
             </tbody>
@@ -70,18 +77,32 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Add New Admin Account</h4>
+          <h4 class="modal-title">Add New Form Application</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
-          <form action="" method="post">
-            <input type="text" name="" placeholder="Lastname" id="">
-            <input type="text" name="" placeholder="Firstname" id="">
-            <input type="text" name="" placeholder="Middlename" id="">
-            <input type="text" name="" placeholder="Middlename" id="">
-            <!-- Add More field -->
+          <form>
+            <div class="form-group-3">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+              <label for="exampleFormControlInput1">Description</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="description...">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Select Category</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <!-- Modify Category Values -->
+                <option>Solo Parent</option>
+                <option>PWD</option>
+                <option>etc</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
           </form>
         </div>
 
@@ -93,6 +114,7 @@
       </div>
     </div>
   </div>
+  <!-- Update Modal -->
   <div class="modal" id="updaeModal">
     <div class="modal-dialog">
       <div class="modal-content">
